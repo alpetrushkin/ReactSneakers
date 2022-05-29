@@ -12,27 +12,34 @@ const arr = [
 function App() {
   return (
     <div className='wrapper clear'>
-    <Drawer />
-    <Header />
-      <div className='content p-40'>
-        <div className='d-flex align-center justify-between mb-40'>
-            <h1>Все кроссовки</h1>
-            <div className='search-block d-flex'>
-              <img src="/img/search.svg" alt="search"/>
-              <input placeholder="Поиск..."/>
-            </div>
-        </div>
+        <center>
+        <h1>0</h1>
+        <button>+</button>
+        <button>-</button>
+        </center>
+    {/*<Drawer />*/}
+    {/*<Header />*/}
+    {/*  <div className='content p-40'>*/}
+    {/*    <div className='d-flex align-center justify-between mb-40'>*/}
+    {/*        <h1>Все кроссовки</h1>*/}
+    {/*        <div className='search-block d-flex'>*/}
+    {/*          <img src="/img/search.svg" alt="search"/>*/}
+    {/*          <input placeholder="Поиск..."/>*/}
+    {/*        </div>*/}
+    {/*    </div>*/}
 
-       <div className='d-flex'>
-               {arr.map((obj) => (
-                   <Card
-                       title = {obj.title}
-                       price ={obj.price}
-                       imageUrl = {obj.imageUrl}
-                   />
-               ))}
-        </div>
-      </div>
+    {/*   <div className='d-flex'>*/}
+    {/*           {arr.map((obj) => (*/}
+    {/*               <Card*/}
+    {/*                   title = {obj.title}*/}
+    {/*                   price ={obj.price}*/}
+    {/*                   imageUrl = {obj.imageUrl}*/}
+    {/*                   onFavorite = { () => console.log('Добавили в закладки')}*/}
+    {/*                   onPlus = { () => console.log('Нажали плюс') }*/}
+    {/*               />*/}
+    {/*           ))}*/}
+    {/*    </div>*/}
+    {/*  </div>*/}
 
     </div>
   );
